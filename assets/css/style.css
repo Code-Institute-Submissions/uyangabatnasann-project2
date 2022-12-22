@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=VT323&display=swap');
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Fira Mono', sans-serif;
+    background-color: rgba(53, 154, 242, 0.9);
+}
+.header {
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+h1, h2, h3 {
+    font-family: 'VT323', sans-serif;
+    text-align:center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px white;  
+}
+h1 {
+    outline: thick ridge pink;
+
+} 
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left; 
+}
+/* Left and right column */
+.column.side {
+    width: 30%;
+} 
+/* Middle column */
+.column.middle {
+    width: 40%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+table, th, td {
+    border-bottom: 1px solid #f2b90f;
+    border-collapse: collapse;
+}
+th {
+    background-color: #f2b90f;
+}
+th, td {
+    text-align: center;
+}
+tr:hover {
+    background-color: #0abf16;
+} 
+.buttons {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width:20%;
+    height:40px;
+    transition: 2s;
+    border-radius: 5%;
+    background-color: #f2b90f;
+}
+.buttons:hover {
+    background-color:#f20c0c;
+    color: white;
+}
+#computerText,#playerText {
+    font-size: 2rem;
+    display:block;
+    font-family: 'VT323', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;    
+}
+.footer {
+    padding: 10px;
+    text-align: center;
+}
+.footer li {
+    display: inline;
+}
+.footer li a {
+    text-decoration: none;
+    color: inherit;
+}
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+    table {
+        visibility: hidden;
+    }
+    .buttons {
+        width:100%;
+    }
+    .header {
+        padding: 30px;
+    }
+  }

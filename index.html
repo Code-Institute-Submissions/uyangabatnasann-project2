@@ -15,12 +15,15 @@
     <title>Rock Paper Scissors Lizard Spock</title>
 </head>
 <body>
-    <header>
-        <h1>Rock Paper Scissors Spock Lizard</h1>
-        <p title="description">The game is an <em>extension</em> of the classic game of chance, <small>Rock Paper Scissors</small>, created by <strong>Sam Kass</strong> and <strong>Karen Bryla</strong>.</p>
-    </header>
+    <div class="header">
+        <header>
+            <h1>Rock Paper Scissors Spock Lizard</h1>
+            <p title="description">The game is an <em>extension</em> of the classic game of chance, <small>Rock Paper Scissors</small>, created by <strong>Sam Kass</strong> and <strong>Karen Bryla</strong>.</p>
+        </header>
+    </div>
+    <div class="row">
     <!-- Who beats whom definitions -->
-    <div>
+    <div class="column side">
         <details>
             <summary>Rock</summary>
             Crushes Lizard<br>Crushes Scissors
@@ -43,11 +46,11 @@
         </details>    
     </div>
     <!-- Game area -->
-    <div>
+    <div id="game-area" class="column middle">
         <h2>Play Game</h2>
         <h3 id="resultText">Result </h3>
-        <span id="playerText">You </span>
-        <span id="computerText">Computer </span>
+        <span id="playerText">You:</span>
+        <span id="computerText">Computer: </span>
         <div id="button">
             <button type="button" class="buttons">ROCK</button>
             <button type="button" class="buttons">PAPER</button>
@@ -57,7 +60,7 @@
         </div>
     </div>
     <!-- Possible outcome of the game table -->
-    <div>
+    <div class="column side">
         <table>
             <caption>Possible outcomes of the game&darr;</caption>
             <tr>
@@ -110,10 +113,12 @@
             </tr>
           </table>
     </div>
+    </div>
+    <div class="footer">
     <footer>
         <ul>
             <li>
-                <a href="https://en.wikipedia.org/wiki/Rock_paper_scissors" target="_blank" aria-label="Go to Rock Paper Scissors Wikipedia page (opens in new tab)">Rock Paper Scissors Wikipedia Page</a>
+                <a href="https://en.wikipedia.org/wiki/Rock_paper_scissors" target="_blank" aria-label="Go to Rock Paper Scissors Wikipedia page (opens in new tab)">Rock Paper Scissors Wikipedia Page</a>|
             </li>
             <wbr>
             <li>
@@ -121,6 +126,7 @@
             </li>
         </ul>
     </footer>
+    </div>
     <!-- Font awesome script -->
     <script src="https://kit.fontawesome.com/7a7647814f.js" crossorigin="anonymous"></script>
     <!-- Javascript script -->

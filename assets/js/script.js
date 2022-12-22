@@ -10,8 +10,8 @@ buttons.forEach(button => button.addEventListener("click", () => {
 
   player = button.textContent;
   computerTurn();
-  playerText.textContent = `Player ${player}`;
-  computerText.textContent = `Computer ${computer}`;
+  playerText.textContent = `Player: ${player}`;
+  computerText.textContent = `Computer: ${computer}`;
   resultText.textContent = checkWinner();
   
 }));
